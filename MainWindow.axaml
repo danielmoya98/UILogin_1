@@ -1,0 +1,112 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="UILogin_1.MainWindow"
+        ExtendClientAreaToDecorationsHint="True"
+        Title="UILogin_1"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="Transparent"
+
+        WindowStartupLocation="CenterScreen">
+
+        <Border CornerRadius="10" BorderBrush="White" BorderThickness="2">
+            <Border.Background >
+                <ImageBrush  Source="C:\Users\Alienware\RiderProjects\UILogin_1\Image.jpg" Stretch="UniformToFill" >
+                    
+                </ImageBrush>
+            </Border.Background>
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="450"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" Orientation="Horizontal"
+                            Width="450">
+                    <Image Margin="120 0  0 0 "
+                           Source="C:\Users\Alienware\RiderProjects\UILogin_1\Ai_Vectors__Photos_and_PSD_files___Free_Download-removebg-preview.png">
+                    </Image>
+                </StackPanel>
+
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Label FontSize="8" Foreground="White" FontWeight="SemiBold">Home</Label>
+                    <Label Margin="20 0 0 0 " FontSize="8" Foreground="White" FontWeight="SemiBold">About</Label>
+                    <Label Margin="20 0 0 0 " FontSize="8" Foreground="White" FontWeight="SemiBold">Bloc</Label>
+                    <Label Margin="20 0 0 0 " FontSize="8" Foreground="White" FontWeight="SemiBold">Pages</Label>
+                    <Label Margin="20 0 0 0 " FontSize="8" Foreground="White" FontWeight="SemiBold">Contact</Label>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                    <ComboBox SelectedIndex="0" Background="Transparent" BorderBrush="Transparent" FontSize="8"
+                              Foreground="White" FontWeight="SemiBold">
+                        <ComboBoxItem>English</ComboBoxItem>
+                    </ComboBox>
+                    <Label Margin="20 7 0 0 " FontSize="8" Foreground="White" FontWeight="SemiBold">Sign In</Label>
+                    <Button Margin="20 0 50 0 " FontSize="8" Foreground="White" FontWeight="SemiBold"
+                            Background="Transparent">
+                        Register
+                    </Button>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="1">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="80"></RowDefinition>
+                            <RowDefinition Height="220"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Label HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="15">Hello !</Label>
+                            <Label FontWeight="Bold" FontSize="15">Welcome Back</Label>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center"
+                                    Orientation="Vertical">
+                            <TextBox Height="35" Width="180"  BorderBrush="Transparent"></TextBox>
+                            <TextBox Width="180" Height="35" Margin="0 5 0 0 " BorderBrush="Transparent"></TextBox>
+                            <Label FontWeight="Thin" FontSize="5" HorizontalContentAlignment="Right"> Forgot your password?</Label>
+                            <Button Margin="5 20 0 0" HorizontalContentAlignment="Center" Width="180"> Sing In</Button>
+                            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0 5 0 0">
+                                <Separator Background="White" Width="50"></Separator>
+                                <Label FontSize="5">or connect with</Label>
+                                <Separator Background="White" Width="50"></Separator>
+                            </StackPanel>
+
+                            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0 15 0 0">
+                                <Button Height="30" Width="40">
+                                    <Image
+                                        Source="C:\Users\Alienware\RiderProjects\UILogin_1\Ai_Vectors__Photos_and_PSD_files___Free_Download-removebg-preview.png">
+                                    </Image>
+                                </Button><Button Height="30" Width="40">
+                                    <Image
+                                        Source="C:\Users\Alienware\RiderProjects\UILogin_1\Ai_Vectors__Photos_and_PSD_files___Free_Download-removebg-preview.png">
+                                    </Image>
+                                </Button>
+                                <Button Height="30" Width="40">
+                                    <Image
+                                        Source="C:\Users\Alienware\RiderProjects\UILogin_1\Ai_Vectors__Photos_and_PSD_files___Free_Download-removebg-preview.png">
+                                    </Image>
+                                </Button>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="2" HorizontalAlignment="Center" Orientation="Horizontal">
+                            <Label FontSize="8" Foreground="DimGray"> Dont have any accoun?</Label>
+                            <Label FontSize="8"> Sing In.</Label>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+
+            </Grid>
+        </Border>
+   
+
+</Window>
